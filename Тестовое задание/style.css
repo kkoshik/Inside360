@@ -1,0 +1,116 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 170px;
+    grid-template-areas:
+    "header"
+    "main"
+    "main"
+    "main"
+    "footer";
+    background: linear-gradient(#327D98, #6D9D42);
+}
+body {
+    margin: 0%;
+}
+header {
+    display: grid;
+    width: auto;
+    grid-area: header;
+    grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	". . logo . head-button";
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: linear-gradient(#BDDD9D, #5B723F);
+}
+.logo {
+	display: grid;
+	grid-area: logo;
+	justify-self: center;
+	align-self: center;
+}
+.head-button {
+	grid-area: head-button;
+	width: 190px;
+	height: 60px;
+    border-radius: 20px;
+	opacity: 71%;
+    background: linear-gradient(#329859, #193D4A);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+	justify-self: center;
+	align-self: center;
+	background-repeat: no-repeat;
+}
+main {
+	display: grid;
+	grid-template-columns: 7fr 50fr 7fr;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-area: main;
+	grid-template-areas:
+	". content ."
+	". content ."
+	". content .";
+}
+.content {
+	display: grid;
+	grid-area: content;
+	grid-template-areas:
+	"title"
+	"content-text"
+	"content";
+	margin: 40px 0px 40px 0px;
+	background: linear-gradient(#BDDD9D, #5B723F);
+	border-radius: 20px;
+}
+.title {
+	display: grid;
+	grid-area: title;
+	justify-self: center;
+	font-size: 24px;
+	font-family: 'Segoe UI';
+	color: #ffffff;
+}
+.content-text {
+	display: grid;
+	grid-area: content-text;
+	font-size: 26px;
+	font-family: 'Segoe UI';
+	font-weight: 1454px;
+	text-align: center;
+	justify-self: center;
+	margin: 0px 23px 23px 23px;
+}
+.content-img {
+	height: 532px;
+	width: 950px;
+	justify-self: center;
+	border-radius: 70px;
+	margin: 0px 23px 0px 23px
+}
+.answer {
+	display: flex;
+	justify-content: center;
+	margin: 0px 23px 0px 23px;
+}
+.answer-input {
+	font-family: 'Segoe UI';
+	font-style: oblique;
+	font-size: 20px;
+	width: 50%;
+	height: 80%;
+}
+.answer-button {
+	width: 190px;
+	height: 60px;
+    border-radius: 20px;
+	opacity: 71%;
+    background: linear-gradient(#329859, #193D4A);
+    cursor: pointer;
+	justify-self: center;
+	background-repeat: no-repeat;
+	margin: 23px;
+}

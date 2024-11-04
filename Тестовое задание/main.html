@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+    <title>Quest</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="css/Taskorio.svg" alt="logo here">
+            </div>
+            <button class="head-button" onclick="alert('На данный момент регистрация недоступна :с')">Регистрация</button>
+        </header>
+        <main>
+            <div class="content">
+                <div class="title">
+                    <h1>Задача №1</h1>
+                </div>
+                <div class="content-text">
+                    <p style="margin: 0px;">
+                        Крестьянину нужно перевезти через реку волка, козу и капусту. Но лодка такова, что в ней может
+                        поместиться только крестьянин, а с ним или один волк, или одна коза, или одна капуста. Но если
+                        оставить волка с козой, то волк съест козу, а если оставить козу с капустой, то коза съест капусту.
+                    </p>
+                    <p style="margin: 0px;">
+                        Как перевез свой груз крестьянин?
+                    </p>
+                </div>
+                <img src="css/forest_river.png" alt="forest river" class="content-img">
+                <h1 style="font-family: 'Segoe UI'; color: #ffffff; justify-self: center;">Решите её?</h1>
+                <div class="answer">
+                    <textarea placeholder="Введите решение сюда..." class="answer-input">
+                    </textarea>
+                </div>
+                <button class="answer-button" onclick="checkAnswer()">Сверить ответ</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
